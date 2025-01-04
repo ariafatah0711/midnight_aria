@@ -305,13 +305,8 @@ section {
 }
 
 @media print, screen and (max-width: 480px) {
-
-  // #header {
-  //   margin-top: -20px;
-  // }
-
   .fork_github .text {
-    display: none;
+    display: none !important;
   }
 
   section {
