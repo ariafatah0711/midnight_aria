@@ -27,7 +27,10 @@
         {% assign path_segments = page.url | split: '/' %}
         {% if path_segments.size <= 2 %} <!-- Jika URL hanya memiliki 2 segmen -->
           <li class="url">
-            <a href="{{ site.url }}">{{ site.url | replace_first: 'https://', '' | replace_first: 'http://', '' }}/</a>
+            <!-- <a href="{{ site.url }}">{{ site.url | replace_first: 'https://', '' | replace_first: 'http://', '' }}/</a> -->
+            <a href="{{ site.url }}">
+              ../
+            </a>
           </li>
           <li class="url">
             <a href="{{ site.url }}/{{ site.repo }}">{{ site.repo }}</a>
@@ -35,12 +38,13 @@
           {% else %}
           <li class="url">
             <a href="{{ site.url }}/{{ site.repo }}">
-              {{ site.repo }}
+              <!-- {{ site.repo }} -->
+              ../
             </a>
           </li>
           <li class="url">
             <a href=" #">
-              /{{ path_segments | slice: 2, path_segments.size | join: '/' | replace: '%20', ' ' }}
+              {{ path_segments | slice: 2, path_segments.size | join: '/' | replace: '%20', ' ' }}
             </a>
           </li>
           {% endif %}
