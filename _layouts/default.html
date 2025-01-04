@@ -23,32 +23,28 @@
 <body>
   <div id="header">
     <nav>
-      <div style="display: flex; gap: 3px;">
+      <ul>
+        <li class="fork_github"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
         {% assign path_segments = page.url | split: '/' %}
         {% if path_segments.size <= 3 %} <!-- Jika URL hanya memiliki 2 segmen -->
-          <a href="{{ site.url }}">
-            {{ site.url | replace_first: 'https://', '' }}/
-          </a>
-          <a href="{{ site.url }}/{{ site.repo }}">
-            {{ site.repo }}
-          </a>
+          <li class="url">
+            <a href="{{ site.url }}">{{ site.url | replace_first: 'https://', '' }}/</a>
+          </li>
+          <li class="url">
+            <a href="{{ site.url }}/{{ site.repo }}">{{ site.repo }}</a>
+          </li>
           {% else %}
-          <!-- Jika URL memiliki lebih dari 2 segmen -->
-          <a href="{{ site.url }}/{{ site.repo }}">
-            {{ site.repo }}
-          </a>
-          <a href=" #">
-            /{{ path_segments | slice: 2, path_segments.size | join: '/' | replace: '%20', ' ' }}
-          </a>
+          <li class="url">
+            <a href="{{ site.url }}/{{ site.repo }}">
+              {{ site.repo }}
+            </a>
+          </li>
+          <li class="url">
+            <a href=" #">
+              /{{ path_segments | slice: 2, path_segments.size | join: '/' | replace: '%20', ' ' }}
+            </a>
+          </li>
           {% endif %}
-      </div>
-      <ul>
-        <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-        {% if site.show_downloads %}
-        <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-        <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-        <!-- <li class="title">DOWNLOADS</li> -->
-        {% endif %}
       </ul>
     </nav>
   </div><!-- end header -->

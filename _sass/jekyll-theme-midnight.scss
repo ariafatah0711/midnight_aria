@@ -239,6 +239,16 @@ dt {
           margin-right: 10px;
           font-size: 11px;
         }
+
+        &.url {
+          float: left;
+          margin-left: 0px;
+        }
+
+        &.fork_github {
+          float: right;
+          margin-left: 6px;
+        }
       }
     }
   }
