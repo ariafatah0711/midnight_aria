@@ -121,3 +121,18 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+<details>
+<summary><b>kubernetes\03 - configuration-and-storage</b></summary>
+<ul>
+ <li><a href='kubernetes/03 - configuration-and-storage/01 - multi container pod.html'>01 - multi container pod</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/02 - volume.html'>02 - volume</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/03 - sharing volume.html'>03 - sharing volume</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/04 - environment variable.html'>04 - environment variable</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/05 - configmap.html'>05 - configmap</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/06 - secret.html'>06 - secret</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/07 - downward API.html'>07 - downward API</a></li>
+ <li><a href='kubernetes/03 - configuration-and-storage/08 - manage kubernetes object.html'>08 - manage kubernetes object</a></li>
+</ul>
+
+</details>
