@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Not Found - {{ site.title | default: site.github.repository_name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li class="url">
+                    <a href="{{ site.url }}">{{ site.url | replace_first: 'https://', '' | replace_first: 'http://', ''
+                        }}/</a>
+                </li>
+                <li class="fork_github"><a href="{{ site.github.repository_url }}">github</a></li>
+            </ul>
+        </nav>
+    </div><!-- end header -->
+
+    <div class="wrapper">
+        <section>
+            <div id="title">
+                <h1>404 - Page Not Found</h1>
+                <p>Sorry, the page you are looking for does not exist.</p>
+                <hr>
+                <p>You can return to the <a href="{{ site.url }}">homepage</a> or explore the <a
+                        href="{{ site.github.repository_url }}">repository on GitHub</a>.</p>
+                <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{
+                        site.github.owner_name }}</a></span>
+                <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a
+                        href="https://twitter.com/mattgraham">mattgraham</a></span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
