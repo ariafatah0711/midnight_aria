@@ -169,8 +169,21 @@ dt {
     // max-width: 650px;
     margin: 0 auto;
     padding: 0 10px;
-    background: blue;
+    // background: blue;
     margin: 6px auto;
+
+    // custom
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      a {
+        color: white;
+        &:hover {
+          color: red;
+        }
+      }
+    }
 
     ul {
       list-style-type: none;
