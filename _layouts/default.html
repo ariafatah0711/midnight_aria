@@ -29,16 +29,16 @@
           <li class="url">
             <!-- <a href="{{ site.url }}">{{ site.url | replace_first: 'https://', '' | replace_first: 'http://', '' }}/</a> -->
             <a href="{{ site.url }}">
-              ../
+              /
             </a>
           </li>
           <li class="url">
-            <a href="{{ site.url }}/{{ site.repo }}">{{ site.repo }}</a>
+            <a href="{{ site.url }}/{{ site.github.repository_name }}">{{ site.github.repository_name }}</a>
           </li>
           {% else %}
           <li class="url">
-            <a href="{{ site.url }}/{{ site.repo }}">
-              <!-- {{ site.repo }} -->
+            <a href="{{ site.url }}/{{ site.github.repository_name }}">
+              <!-- {{ site.github.repository_name }} -->
               ../
             </a>
           </li>
