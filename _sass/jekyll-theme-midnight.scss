@@ -226,6 +226,9 @@ dt {
         &.fork_github {
           float: right;
           margin-left: 6px;
+          .text {
+            display: inline;
+          }
         }
       }
     }
@@ -306,6 +309,10 @@ section {
   // #header {
   //   margin-top: -20px;
   // }
+
+  .fork_github .text {
+    display: none;
+  }
 
   section {
     margin-top: 40px;
