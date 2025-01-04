@@ -125,8 +125,8 @@ The final element.
 <details>
 <summary><b>Docs</b></summary>
 <ul>
- <li><a href='./_template/1.md'>01</a></li>
- <li><a href='./_template/2.md'>02</a></li>
+ <li><a href='./example/1.html'>01</a></li>
+ <li><a href='./example/2.html'>02</a></li>
 </ul>
 
 </details>
