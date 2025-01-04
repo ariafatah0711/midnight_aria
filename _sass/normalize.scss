@@ -170,7 +170,7 @@ strong {
 }
 
 blockquote {
-    margin: 1em 20px;
+    margin: 1em 40px;
 }
 
 /*
@@ -543,5 +543,15 @@ summary {
         -webkit-transform-origin: .2rem 50%; /* Tambahkan ini */
         transition: .25s transform ease;
         -webkit-transition: .25s transform ease; /* Tambahkan ini */
+    }
+}
+
+// custom media
+@media print, screen and (max-width: 480px) {
+    dd,
+    menu,
+    ol,
+    ul {
+        padding: 0 0 0 10px;
     }
 }
