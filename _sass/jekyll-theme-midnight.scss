@@ -190,6 +190,7 @@ dt {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      width: 100%;
 
       li {
         font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -221,7 +222,7 @@ dt {
             // background-color: #659e10;
             // border: 1px solid #527f0e;
             // box-shadow: inset 0px 1px 1px rgba(0,0,0,.2), 0px 1px 0px rgba(0,0,0,.0);
-            color: red;
+            color: linear-gradient(#749619, #527f0e);
           }
         }
 
@@ -326,14 +327,14 @@ section {
 
 @media print, screen and (max-width: 480px) {
 
-  #header {
-    margin-top: -20px;
-  }
+  // #header {
+  //   margin-top: -20px;
+  // }
 
   section {
     margin-top: 40px;
   }
-  nav {
-    display: none;
-  }
+  // nav {
+  //   display: none;
+  // }
 }
