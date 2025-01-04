@@ -26,18 +26,18 @@
       <div style="display: flex; gap: 3px;">
         {% assign path_segments = page.url | split: '/' %}
         {% if path_segments.size <= 3 %} <!-- Jika URL hanya memiliki 2 segmen -->
-          <a href="{{ site.url }}" style="color: red;">
+          <a href="{{ site.url }}">
             {{ site.url | replace_first: 'https://', '' }}/
           </a>
-          <a href="{{ site.url }}/{{ site.repo }}" style="color: red;">
+          <a href="{{ site.url }}/{{ site.repo }}">
             {{ site.repo }}
           </a>
           {% else %}
           <!-- Jika URL memiliki lebih dari 2 segmen -->
-          <a href="{{ site.url }}/{{ site.repo }}" style="color: red;">
+          <a href="{{ site.url }}/{{ site.repo }}">
             {{ site.repo }}
           </a>
-          <a href="#" style="color: red;">
+          <a href=" #">
             /{{ path_segments | slice: 2, path_segments.size | join: '/' | replace: '%20', ' ' }}
           </a>
           {% endif %}
