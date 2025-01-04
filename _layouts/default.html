@@ -25,7 +25,7 @@
     <nav>
       <ul>
         {% assign path_segments = page.url | split: '/' %}
-        {% if path_segments.size <= 3 %} <!-- Jika URL hanya memiliki 2 segmen -->
+        {% if path_segments.size <= 2 %} <!-- Jika URL hanya memiliki 2 segmen -->
           <li class="url">
             <a href="{{ site.url }}">{{ site.url | replace_first: 'https://', '' | replace_first: 'http://', '' }}/</a>
           </li>
